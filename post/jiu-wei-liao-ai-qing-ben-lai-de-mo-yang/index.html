@@ -1,102 +1,89 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" >
+    
+<meta charset="utf-8" >
 
 <title>久违了，爱情本来的模样 | Ing 的赏花会</title>
+<meta name="description" content="此世是地狱顶上的一场赏花会">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://eren997.github.io/favicon.ico?v=1613099947664">
+<link rel="shortcut icon" href="https://eren997.github.io/favicon.ico?v=1613100353903">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
 <link rel="stylesheet" href="https://eren997.github.io/styles/main.css">
 
 
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 
 
-    <meta name="description" content="这是一封船长 Eren 写给博主 Melody 的信。
-
-嘿，Melody
-不知道情人节送一个小网站给你，你会不会喜欢；
-不过，总之已经送出去了，无论是否喜欢都应该收下。
-域名我擅自主张选为“ingflower.com”，灵感参照你公众号名..." />
-    <meta name="keywords" content="" />
   </head>
   <body>
     <div id="app" class="main">
-
-      <div class="sidebar" :class="{ 'full-height': menuVisible }">
-  <div class="top-container" data-aos="fade-right">
-    <div class="top-header-container">
-      <a class="site-title-container" href="https://eren997.github.io">
-        <img src="https://eren997.github.io/images/avatar.png?v=1613099947664" class="site-logo">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://eren997.github.io">
+        <img class="avatar" src="https://eren997.github.io/images/avatar.png?v=1613100353903" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://eren997.github.io">
         <h1 class="site-title">Ing 的赏花会</h1>
       </a>
-      <div class="menu-btn" @click="menuVisible = !menuVisible">
-        <div class="line"></div>
-      </div>
     </div>
-    <div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
         
-          <a href="/" class="site-nav">
+          <a href="/" class="menu purple-link">
             首页
           </a>
         
       
         
-          <a href="/archives" class="site-nav">
+          <a href="/archives" class="menu purple-link">
             归档
           </a>
         
       
         
-          <a href="/tags" class="site-nav">
+          <a href="/tags" class="menu purple-link">
             标签
           </a>
         
       
     </div>
   </div>
-  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-    <div class="site-description">
-      此世是地狱顶上的一场赏花会
-    </div>
-    <div class="site-footer">
-      Powered by<a href="https://erenship.com" target="_blank"> _Captain Eren</a> | <a class="rss" href="https://eren997.github.io/atom.xml" target="_blank">RSS</a>
-    </div>
-  </div>
-</div>
+</transition>
 
 
-      <div class="main-container">
-        <div class="content-container" data-aos="fade-up">
-          <div class="post-detail">
-            <h2 class="post-title">久违了，爱情本来的模样</h2>
-            <div class="post-date">2021-02-14</div>
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://eren997.github.io/post-images/jiu-wei-liao-ai-qing-ben-lai-de-mo-yang.jpg')">
+            </div>
+          
+          <h2 class="post-title">久违了，爱情本来的模样</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2021-02-14</span>
             
-              <div class="feature-container" style="background-image: url('https://eren997.github.io/post-images/jiu-wei-liao-ai-qing-ben-lai-de-mo-yang.jpg')">
-              </div>
-            
-            <div class="post-content" v-pre>
-              <p>这是一封船长 Eren 写给博主 Melody 的信。</p>
+          </div>
+          <div class="post-content">
+            <p>这是一封船长 Eren 写给博主 Melody 的信。</p>
 <!-- more -->
 <p>嘿，Melody</p>
 <p>不知道情人节送一个小网站给你，你会不会喜欢；<br>
@@ -108,22 +95,37 @@
 <p>船长 Eren<br>
 2021 年 2 月 14 日</p>
 
-            </div>
-            
-            
-
-            
-
           </div>
-
         </div>
+
+        
       </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">此世是地狱顶上的一场赏花会</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by<a href="https://erenship.com" target="_blank"> _Captain Eren</a> | <a class="rss" href="https://eren997.github.io/atom.xml" target="_blank">RSS</a>
+</div>
+
+
     </div>
+    <script type="application/javascript">
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script type="application/javascript">
-
-AOS.init();
+hljs.initHighlightingOnLoad()
 
 var app = new Vue({
   el: '#app',
@@ -133,8 +135,6 @@ var app = new Vue({
 })
 
 </script>
-
-
 
 
 
