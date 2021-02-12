@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://ingflower.com</id>
     <title>Ing 的赏花会</title>
-    <updated>2021-02-12T03:40:03.847Z</updated>
+    <updated>2021-02-12T03:45:31.987Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://ingflower.com"/>
     <link rel="self" href="https://ingflower.com/atom.xml"/>
@@ -16,9 +16,9 @@
         <link href="https://ingflower.com/post/jiu-wei-liao-ai-qing-ben-lai-de-mo-yang/">
         </link>
         <updated>2021-02-13T16:00:00.000Z</updated>
-        <summary type="html"><![CDATA[<p>这是一封船长 Eren 写给博主 Melody 的信。</p>
+        <summary type="html"><![CDATA[<p>「这是一封船长 Eren 写给博主 Melody 的信。」</p>
 ]]></summary>
-        <content type="html"><![CDATA[<p>这是一封船长 Eren 写给博主 Melody 的信。</p>
+        <content type="html"><![CDATA[<p>「这是一封船长 Eren 写给博主 Melody 的信。」</p>
 ]]></content>
     </entry>
 </feed>
