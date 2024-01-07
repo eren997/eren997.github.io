@@ -1,13 +1,13 @@
 ---
 # Display name
-title: 吳健雄
+title: Luke Lew
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: ''
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Luke
+last_name: Lew
 
 # Status emoji
 status:
@@ -17,7 +17,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: Professor of Artificial Intelligence
+role: 一位英语自学者
 
 # Organizations/Affiliations to show in About widget
 organizations:

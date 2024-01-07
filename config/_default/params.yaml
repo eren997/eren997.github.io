@@ -5,8 +5,8 @@
 
 # Appearance
 appearance:
-  mode: light
-  color: indigo
+  mode: system
+  color: blue
 
 # SEO
 marketing:
@@ -27,26 +27,51 @@ marketing:
     baidu: ''
 
 # Site header
+# header:
+#   navbar:
+#     enable: true
+#     blox: "navbar"
+#     fixed_to_top: true
+#     logo:
+#       text: ""
+#       # Logo filename in `assets/media/` folder
+#       filename: "logo.png"
+#     button:
+#       enable: false
+#       text: "Get Started"
+#       url: "https://hugoblox.com/templates/"
+#     show_search: true
+#     show_theme_chooser: true
+    
 header:
   navbar:
     enable: true
     blox: "navbar"
+    align: l
     fixed_to_top: true
     logo:
       text: ""
-      # Logo filename in `assets/media/` folder
-      filename: "logo.svg"
+      filename: "logo.png"
     button:
       enable: true
       text: "Get Started"
       url: "https://hugoblox.com/templates/"
-    show_search: true
     show_theme_chooser: true
+    show_search: true
+
+# Add this style to your existing YAML configuration at the root level
+style:
+  status_bar:
+    background-color: "rgba(0, 0, 0, 0)"  # Adjust the alpha (fourth value) for transparency
+
+
+
+
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: '© {year} Luke Lingo'
 
 # Localization
 locale:
